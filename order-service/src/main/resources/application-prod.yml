@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: prod
+data:
+  mongodb:
+    database: microservice
+    uri: "mongodb+srv://rootProduct:cmVMhliAzboLayTZ@cluster0.wdurlff.mongodb.net/"
+    eureka:
+      client:
+        serviceUrl:
+          defaultZone: https://eureka.example.com/eureka
+  application:
+    name: order-service
